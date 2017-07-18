@@ -1,6 +1,8 @@
 ﻿
-Microsoft Visual Studio Solution File, Format Version 11.00
-# Visual Studio 2010
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.26430.15
+MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestConsoleApplication", "TestConsoleApplication\TestConsoleApplication.csproj", "{C3FE8ACB-688B-47E4-9E62-0EE09B0435E1}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LINQtoCSV", "LINQtoCSV\LINQtoCSV.csproj", "{07058BF9-6F86-40FF-AE33-2A4F89B5758A}"
@@ -16,10 +18,11 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 		TraceAndTestImpact.testsettings = TraceAndTestImpact.testsettings
 	EndProjectSection
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LINQtoCSVCore", "LINQtoCSVCore\LINQtoCSVCore.csproj", "{175BB1FA-5394-4CE0-97E3-DE539E72FB5D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SampleCodeCore", "SampleCodeCore\SampleCodeCore.csproj", "{C452C141-FF95-410C-AA4F-5D3D7EDB0233}"
+EndProject
 Global
-	GlobalSection(TestCaseManagementSettings) = postSolution
-		CategoryFile = LINQtoCSV.vsmdi
-	EndGlobalSection
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
 		Release|Any CPU = Release|Any CPU
@@ -41,8 +44,19 @@ Global
 		{04EE17CD-E7B3-4D58-BF84-E553F5332A14}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{04EE17CD-E7B3-4D58-BF84-E553F5332A14}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{04EE17CD-E7B3-4D58-BF84-E553F5332A14}.Release|Any CPU.Build.0 = Release|Any CPU
+		{175BB1FA-5394-4CE0-97E3-DE539E72FB5D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{175BB1FA-5394-4CE0-97E3-DE539E72FB5D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{175BB1FA-5394-4CE0-97E3-DE539E72FB5D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{175BB1FA-5394-4CE0-97E3-DE539E72FB5D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C452C141-FF95-410C-AA4F-5D3D7EDB0233}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C452C141-FF95-410C-AA4F-5D3D7EDB0233}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C452C141-FF95-410C-AA4F-5D3D7EDB0233}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C452C141-FF95-410C-AA4F-5D3D7EDB0233}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(TestCaseManagementSettings) = postSolution
+		CategoryFile = LINQtoCSV.vsmdi
 	EndGlobalSection
 EndGlobal

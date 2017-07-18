@@ -63,9 +63,9 @@
     <Compile Include="Utils.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\LINQtoCSV\LINQtoCSV.csproj">
-      <Project>{07058BF9-6F86-40FF-AE33-2A4F89B5758A}</Project>
-      <Name>LINQtoCSV</Name>
+    <ProjectReference Include="..\LINQtoCSVCore\LINQtoCSVCore.csproj">
+      <Project>{175bb1fa-5394-4ce0-97e3-de539e72fb5d}</Project>
+      <Name>LINQtoCSVCore</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
