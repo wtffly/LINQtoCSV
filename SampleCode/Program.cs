@@ -45,6 +45,7 @@ namespace SampleCode
                  QuoteAllFields=false,
                 SeparatorChar = '\t', // tab delimited
                 FirstLineHasColumnNames = false,
+                EnforceCsvColumnAttribute = true,
                 FileCultureName = "nl-NL" // language/country code of The Netherlands
             };
 
@@ -72,6 +73,8 @@ namespace SampleCode
                 "../../TestFiles/output-products-Netherlands-formatted.csv",
                 outputFileDescription);
 
+            Console.WriteLine("Done!");
+            Console.ReadKey();
         }
 
         public static void ShowErrorMessage(string errorMessage)

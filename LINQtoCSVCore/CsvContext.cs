@@ -110,8 +110,9 @@ namespace LINQtoCSV
 
             if (readingFile)
             {
+                FileStream fs = new FileStream(fileName, FileMode.Open, FileAccess.Read);
                 stream = new StreamReader(
-                                    fileName,
+                                    fs,
                                     fileDescription.TextEncoding,
                                     fileDescription.DetectEncodingFromByteOrderMarks);
             }
@@ -210,7 +211,7 @@ namespace LINQtoCSV
             {
                 if (readingFile)
                 {
-                    stream.Close();
+                    stream.Dispose();
                 }
 
                 // If any exceptions were raised while reading the data from the file,
@@ -228,9 +229,9 @@ namespace LINQtoCSV
             string fileName,
             CsvFileDescription fileDescription)
         {
+            using(var fs = new FileStream(fileName, FileMode.Create))
             using (StreamWriter sw = new StreamWriter(
-                                                fileName,
-                                                false,
+                                                fs,
                                                 fileDescription.TextEncoding))
             {
                 WriteData<T>(values, fileName, sw, fileDescription);

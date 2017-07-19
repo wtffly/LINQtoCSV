@@ -45,6 +45,7 @@ namespace SampleCode
                  QuoteAllFields=false,
                 SeparatorChar = '\t', // tab delimited
                 FirstLineHasColumnNames = false,
+                EnforceCsvColumnAttribute = true,
                 FileCultureName = "nl-NL" // language/country code of The Netherlands
             };
 
